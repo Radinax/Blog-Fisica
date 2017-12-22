@@ -1,0 +1,14 @@
+@import 'color'; 
+button {
+    height: 40px;
+    width: 40px; 
+    background-color: $button;
+    color: $background;
+    border: none;
+}
+.plus-neg {
+    border-radius: 50%;
+}
+.control-value {
+    color: $pomodoro;
+}
