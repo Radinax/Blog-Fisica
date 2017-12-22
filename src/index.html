@@ -20,191 +20,40 @@
     <main>
         <article>
             <section class='introduccion'>
-                <h1 class='title'>Introduccion a los Vectores</h1>
-                <p>
-                    Los vectores son una herramienta utilizada para representar fenomenos fisicos en un sistema de referencia, por ejemplo un
-                    carro moviendose a cierta velocidad que se mueve a la derecha, puede ser estudiado con un vector velocidad
-                    `vecV` que se mueve en direccion `hati`. Existen muchos tipos de vectores, entre ellos la mencionada
-                    velocidad, aceleracion, posicion, fuerza, campos, etc. En esta seccion veremos una introduccion al tema
-                    e iremos profundizando a medida que avanzemos.
-                </p>
-                <figure class='vector'>
-                    <img src='images/vector.png'>
-                </figure>
-                <strong>Figura 1: </strong>Caracteristicas de un vector.
-                <br>
-                <p>
-                    Para representar un vector, lo hacemos mediante con una flecha arriba del nombre (`vecA`), el cual tiene una magnitud (`abs(vecA)`)
-                    y componentes (`Axhati` y `Ayhatj`), en la siguiente figura se muestra una representacion grafica de
-                    lo que se acaba de hablar.
-                </p>
-                <figure class='vector'>
-                    <img src='images/componentes-vector.png'>
-                </figure>
-                <strong>Figura 2: </strong>Componentes de un vector
-                <p>
-                    En este caso el vector `vecV` puede ser representado de la siguiente manera:
-                    <br> `vecV = Axhati + Ayhatj`
-                    <br> Donde las letras "`hati`" y "`hatj`" representan los vectores unitarios, es decir, los vectores por
-                    lo general se situan en el plano de coordenadas X-Y, donde la cada eje tiene asociado un vector unitario
-                    que solo indica la direccion en la que apunta el vector, los cuales tiene un tamaño de uno. Su utilidad
-                    recae en que podemos hacer uso del teorema de pitagoras para obtener la magnitud y direccion del vector
-                    conociendo las componentes.
-                </p>
-            </section>
-            <section class='sistema-referencia'>
-                <h1>Sistema de referencia</h1>
-                <p>
-                    Los sistemas de referencias son un factor importante en el estudio de los vectores, es donde se representan y podemos estudiar
-                    los fenomenos que representen. Existen dos planos, el bidimensional (2D) y tridimensional (3D), como
-                    se muestra en la figura a continuacion.
-                </p>
-                <figure class='vector'>
-                    <img src='images/sistema-referencia.png'>
-                </figure>
-                <strong>Figura 3: </strong>Sistema de referencias.
-                <p>
-                    <h1>Plano Bidimensional</h1>
-                    El plano bidimensional esta compuestos de cuatro cuadrantes como se muestra en la siguiente figura.
-                </p>
-                <figure class='vector'>
-                    <img src='images/cuadrantes.png'>
-                </figure>
-                <strong>Figura 4: </strong>Cuadrantes del sistema de coordenadas.
-                <p>
-                    Si ubicamos un vector en el cuadrante IV con una direccion de 330&#186; leidos en el sentido contrario de las agujas del
-                    reloj, mientras en el sentido de ellas se leeria como -30&#186;.
-                </p>
-                <figure class='vector'>
-                    <img src='images/vectores-reloj.png'>
-                </figure>
-                <strong>Figura 5: </strong>Direccion de un vector en el eje.
-                <p>
-                    Son dos formas de leer el vector, en donde veremos mas adelante cuales son las mejores maneras de analizar la direccion de
-                    los vectores.
-                </p>
-                <p>
-                    <h1>Plano Tridimensional</h1>
-                    Esta compuesto de tres ejes, añaniendo el eje Z (con vector unitario `hatk`), ahora vea el plano tridimensional en la figura
-                    3, notara que el vector resultante sale del origen hacia un punto en especifico.
-                    <br>Para ubicar vectores en ese plano ubicamos las coordenadas X del vector en el eje correspondiente, trazamos
-                    una linea paralela al eje
-                    <i>Y</i> y ubicamos la coordenada en el, en ese punto de interseccion entre los dos ejes, trazamos una recta
-                    paralela al eje Z y ubicamos el punto en la distancia correspondiente.
-                </p>
-                <figure class='vector'>
-                    <img src='images/vector-r3.png'>
-                </figure>
-                <strong>Figura 6: </strong>Ubicacion de un vector en el plano tridimensional.
-            </section>
-            <section class='funciones-trigonometricas'>
-                <h1>Suma de Vectores</h1>
-                <p>
-                    Los vectores pueden sumarse de manera grafica y analitica.
-                    <h1>Suma Grafica de vectores</h1>
-                    <p>
-                        <h1>Metodo punta y cola</h1>
-                        Si se desea sumar dos vectores `vecA` y `vecB`, tomamos el final de `vecA` y lo unimos con el principio de `vecB`, finalmente
-                        unimos el principio de `vecA` con el final de `vecB`.
-                        <figure class='vector'>
-                            <img src='images/suma-vectores-punta-cola.png'>
-                        </figure>
-                        <strong>Figura 7: </strong>Metodo punta y cola para suma grafica de vectores.
-                        <h1>Metodo del paralelogramo</h1>
-                        Si se desea sumar dos vectores `vecA` y `vecB`, unimos el origen de ambos vectores y luego trazamos lineas paralelas, en
-                        el caso del `vecA`, nos ubicamos en su final y trazamos una linea paralela al vector `vecB`, hacemos
-                        lo mismo con el otro, nos ubicamos en su final y trazamos una linea paralela, el punto de encuentro
-                        se une con el origen de ambos vectores para obtener el resultante.
-                        <figure class='vector'>
-                            <img src='images/suma-vectores-paralelogramo.png'>
-                        </figure>
-                        <strong>Figura 8: </strong>Metodo del paralelogramo para suma grafica de vectores.
-                    </p>
-                    <h1>Suma Analitica de vectores</h1>
-                    <p>
-                        En general la suma de vectores es la suma de sus componentes `hati`, `hatj` y `hatk`, por ejemplo:
-                        <br> Si tenemos `vecA = 2hati + 3hatj` y `vecB = hati + 4hatj`, la suma de ambos sera un vector que llamaremos
-                        `vecC`
-                        <br> `vecC = (2+1)hati + (3+4)hatj`
-                        <br> `vecC = 3hati + 7hatj`
-                    </p>
-                </p>
-                <p>
-                    <h1>Funciones Trigonometricas</h1>
-                    Son funciones que relacionan los lados de un triangulo recto entre si, es muy utilizado en el analisis vectorial.
-                    <figure class='vector'>
-                        <img src='images/funciones-trigonometricas.png'>
-                    </figure>
-                    <strong>Figura 9: </strong>Resumen de las funciones trigonometricas.
-                </p>
-                <p>
-                    <h1>Funciones Trigonometricas</h1>
-                    Son funciones que relacionan los lados de un triangulo recto entre si, es muy utilizado en el analisis vectorial.
-                    <figure class='vector'>
-                        <img src='images/funciones-trigonometricas.png'>
-                    </figure>
-                    <strong>Figura 9: </strong>Resumen de las funciones trigonometricas. Consideremos el siguiente vector.
-                    <figure class='vector'>
-                        <img src='images/vector-funcion-trigonometrica.png'>
-                    </figure>
-                    <strong>Figura 9: </strong>Vector en el plano 2D.
-                    <br> Ese vector `vecR = Rxhati + Ryhatj`, puede ser expresado mediante las funciones trigonometricas como:
-                    <br> `Rx = abs(R)*cos(theta)`
-                    <br> `Ry = abs(R)*sen(theta)`
-                    <br> Donde la magnitud se puede obtener mediante el teorema de pitagoras.
-                    <figure class='vector'>
-                        <img src='images/teorema-pitagoras.gif'>
-                    </figure>
-                    <strong>Figura 10: </strong>Teorema de pitagoras.
-                    <br> `abs(vecR) = sqrt(Rx^2 + Ry^2)`
-                    <br> Para obtener su direccion `theta` utilizamos la funcion tangente. tg`theta = frac{Ry}{Rx}`
-                    <br>
-                </p>
-            </section>
-            <section class='producto-escalar-vectorial'>
-                <h1>Producto Escalar</h1>
-                <p>
-                    Dados dos vectores `vecA` y `vecB`, un producto escalar `vecA * vecB` se define como el producto de sus módulos por el coseno
-                    del ángulo `theta` que forman, cuyo resultado es un numero escalar. Esta operacion representa la proyeccion
-                    de un vector sobre otro.
-                </p>
-                <figure class='vector'>
-                    <img src='images/producto-escalar.jpg'>
-                </figure>
-                <strong>Figura 11: </strong>Producto escalar.
-                <br>
-                <p>
-                    Siendo `vecA = axhati + ayhatj + azhatk` y `vecB = bxhati + byhatj + bzhatk`, dos vectores, <i>m</i> y <i>n</i> dos escalares, podemos resumir las propiedades del producto escalar de la siguiente forma.
-                </p>
-                <ul>
-                    <li>`vecA * vecB = vecB * vecA`</li>
-                    <li>`vecA * (vecB + vecC) = vecA * vecB + vecA * vecC`</li>
-                    <li>`m (vecA * vecB) = (mvecA)*vecB = (vecA * vecB) m`</li>
-                    <li>`hati*hati = hatj*hatj = hatk*hatk = 1`</li>
-                    <li>`hati*hatj = hatj*hatk = hatk*hati = 0`</li>
-                    <li>`vecA*vecB = (axhati)(bxhati) + (ayhatj)(byhatj) + (akhatk)(bzhatk)`</li>
-                </ul>
-                <h1>Producto Vectorial</h1>
-                <p>
-                    Dados dos vectores `vecA` y `vecB`, un producto vectorial `vecA xx vecB` se define como el producto de sus módulos por el seno
-                    del ángulo `theta` que forman, cuyo resultado es un vector. Esta operacion representa un vector perpendicular a ambos.
-                </p>
-                <figure class='vector'>
-                    <img src='images/producto-vectorial.jpg'>
-                </figure>
-                <strong>Figura 12: </strong>Producto vectorial.
-                <br>
-                <p>
-                    Siendo `vecA = axhati + ayhatj + azhatk` y `vecB = bxhati + byhatj + bzhatk`, dos vectores, <i>m</i> y <i>n</i> dos escalares, podemos resumir las propiedades del producto vectorial de la siguiente forma.
-                </p>
-                <ul>
-                    <li>`vecA xx vecB = -(vecB xx vecA)`</li>
-                    <li>`vecA xx (vecB + vecC) = vecA xx vecB + vecA xx vecC`</li>
-                    <li>`m (vecA xx vecB) = (mvecA)xxvecB = (vecA xx vecB) m`</li>
-                    <li>`hatixxhati = hatjxxhatj = hatkxxhatk = 0`</li>
-                    <li>`hatixxhatj = hatjxxhatk = hatkxxhati = 1`</li>
-                    <li>`vecAxxvecB = abs([i,j,k],[ax,ay,az],[bx,by,bz]) = abs([j,k],[ay,az],[by,bz])*hati + abs([i,k],[ax,az],[bx,bz])*hatj +abs([i,j],[ax,ay],[bx,by])*hatk = (ay*bz - az*by)hati + (ax*bz - az*bx)hatj  + (ax*by - ay*bx)hatk`</li>
-                </ul>
+                Blog de Fisica Universitaria, estara compuesto de los siguientes temas:
+                <ol>
+                    <li>Cinematica</li>    
+                    <ul>
+                        <li><a href='_vectores.html'>Vectores</a></li>
+                        <li><a href='_cinematica.html'>Cinematica</a></li>
+                        <li><a href='_movimientos-rectilineos.html'>Movimientos Rectilineos</a></li>
+                        <li><a href='_lanzamiento-proyectil.html'>Lanzamientos de proyectiles</a></li>
+                        <li><a href='_movimiento-circular.html'>Movimiento Circular</a></li>
+                    </ul>
+                    <li>Dinamica de una particula</li>    
+                    <ul>
+                        <li><a href='_fuerza.html'>Fuerza</a></li>
+                        <li><a href='_leyes-de-newton.html'>Leyes de Newton</a></li>
+                        <li><a href='_fuerza-roce.html'>Fuerza de Roce</a></li>
+                        <li><a href='_ley-hooke.html'>Ley de Hooke</a></li>
+                        <li><a href='_trabajo-mecanico.html'>Trabajo Mecanico</a></li>
+                        <li><a href='_potencia.html'>Potencia</a></li>
+                        <li><a href='_energia.html'>Energia Mecanica</a></li>
+                        <li><a href='_conservacion-energia.html'>Conservacion de la Energia Mecanica</a></li>
+                    </ul>
+                    <li>Dinamica de Sistemas de Particulas</li>    
+                    <ul>
+                        <li><a href='_centro-masas.html'>Centro de Masas</a></li>
+                        <li><a href='_momento-lineal.html'>Momento Lineal</a></li>
+                        <li><a href='_impulso.html'>Impulso</a></li>
+                        <li><a href='_colisiones.html'>Colisiones</a></li>
+                        <li><a href='_momento-inercia.html'>Momento de Inercia</a></li>
+                        <li><a href='_momento-fuerza.html'>Momento de una Fuerza</a></li>
+                        <li><a href='_momento-angular.html'>Momento Angular</a></li>
+                        <li><a href='_dinamica-rotaciones.html'>Dinamica de Rotaciones</a></li>
+                    </ul>
+                </ol>
+                
             </section>
         </article>
     </main>
