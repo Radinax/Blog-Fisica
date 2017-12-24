@@ -29,11 +29,38 @@
                 </figure>
                 <strong>Figura 1: </strong>Skippy moviendose de una posicion a otra.
                 <br>
+                
+
+            </section>
+            <section class='vector-posicion'>
                 <p>
+                    <h1>Vector Posición</h1><br>
                     Veamos el caso de Skippy, el corre de izquierda a derecha, moviendose de una posicion inicial (x
                     <sub>0</sub>) a una posicion final (x
-                    <sub>f</sub>), donde el termino "posicion" es solo su ubicacion en el espacio. Si restamos la posicion final de Skippy con su posicion inicial podemos obtener el <b>vector desplazamiento</b> `vecr`, el cual describe la trayectoria de un objeto.
+                    <sub>f</sub>), donde el termino "posicion" es solo su ubicacion en el espacio. Si restamos la posicion final de Skippy con su posicion inicial podemos obtener el <b>vector posición</b> `vecr`, el cual describe la ubicación de una particula en el espacio como se observa en la siguiente figura.<br>
+                    <figure class='imagen'>
+                        <img src='images/vector-posicion.png'>
+                    </figure>
+                    <strong>Figura 2: </strong>Vector posición en un plano.
                     <br>
+                    En este caso el vector posicion es `vecr = (xf - xo)hati + (yf - y0)hatj`. Ya va un momento! Que es eso de `(yf - y0)hatj`? Por lo general "x" se asocia a movimientos en direccion recta para nuestra perspectiva, pero que sucede si el objeto varia su altura? Pidamosle ayuda a Skippy con un salto.
+                    <figure class='imagen'>
+                        <img src='images/skippy-vector-posicion.png'>
+                    </figure>
+                    <strong>Figura 2: </strong>Skippy demostrando el vector posicion con un salto. <br><br>
+                    Skippy originalmente estaba paseando hasta que le pedimos que diera un salto, en ese preciso momento ubicamos nuestro sistema de referencia sobre el (imagina que le tiremos una foto mental justo antes de saltar), eligiendo sus posiciones iniciales en el origen (`xo = 0` y `y0 = 0`). Cuando salta cambia su posicion, le tomamos otra foto mental mientras esta en el aire y tendra coordenadas (`xf` y `yf`), donde el vector `vecr` representa la posicion de Skippy, el cual depende de donde estaba inicialmente y donde termino. Como todo vector, podemos obtener su magnitud mediante el teorema de pitagoras.<br>
+                    `absvecr = sqrt((xf - xo)^2 + (yf - y0)^2)` <br>
+                    <h1>Vector Desplazamiento</h1>
+                    Ahora veamos que sucede cuando Skippy cambia de posicion mientras aterriza, tomemosle otra foto mental.
+                    <figure class='imagen'>
+                            <img src='images/skippy-vector-desplazamiento.png'>
+                    </figure>
+                    <strong>Figura 2: </strong>Skippy demostrando el vector desplazamiento con un salto. <br><br>
+                </p>
+            </section>
+            <section class='velocidad'>
+                <h1>Velocidad</h1>
+                <p>
                     Si conocemos el tiempo que le toma a Skippy llegar a esa posicion final, podemos obtener su velocidad! El cual viene representado por el vector desplazamiento entre el tiempo que le toma hacer ese recorrido como lo muestra la siguiente formula: <br>
                     `vecV`= `frac{xf - x0}{tf - t0}`
                     <br>
@@ -49,9 +76,8 @@
                     <br>
                     Sus unidades son los `frac{metros}{segundos^2}`, entonces la aceleracion es la variacion de la velocidad con respecto al tiempo, o visto de otra manera, es la variacion de distancias recorridas por una particula (en este caso Skippy!) con respecto al cuadrado del tiempo.
                     <br><br>
-                    Esto solo es un abre bocas de lo que veremos en este tema, nos adentraremos en profundidad con la Fisica junto a Skippy!
+                    Esto solo es un abre bocas de lo que veremos en este tema, nos adentraremos en profundidad con la Fisica junto a Skippy!s
                 </p>
-
             </section>
         </article>
     </main>
