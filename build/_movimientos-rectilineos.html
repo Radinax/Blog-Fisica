@@ -22,10 +22,11 @@
             <section class='introduccion'>
                 <h1 class='title'>Movimiento Rectilíneo</h1>
                 <p>
-                    Hemos visto como Skippy se mueve de izquierda a derecha en una sola dirección, esto es conocido como Movimiento Rectilíneo. Existen dos formas de este tipo de movimiento: <br><br>
+                    Hemos visto como Skippy se mueve de izquierda a derecha en una sola dirección, esto es conocido como Movimiento Rectilíneo. Un movimiento rectilíneo es aquel cuya trayectoria es una línea recta. En los movimientos rectilíneos podemos tratar las magnitudes cinemáticas vectoriales como si fuesen escalares, como la posicion, velocidad y aceleracion. Existen dos formas de este tipo de movimiento: <br><br>
                     <ul>
                         <li>
                             <h1>Movimiento Rectilíneo Uniforme (M.R.U)</h1>
+                            
                         </li>
                         <li>
                             <h1>Movimiento Rectilíneo Uniformemente Acelerado (M.R.U.A)</h1>
@@ -38,11 +39,38 @@
             <section class='MRUA'>
                 <h1>Movimiento Rectilíneo Uniformemente Acelerado</h1>
                 <p>
-                    Veamos nuevamente a Skippy en la imagén de abajo.
-                    <figure class='vector'>
-                        <img src='images/skippy-plano-recto.png'>
+                    Un cuerpo realiza un movimiento rectilíneo uniformemente acelerado (MRUA) cuando su trayectoria es una línea recta y su aceleración es constante y distinta de 0. Podemos relacionar este concepto con la siguiente ecuacion: <br>
+                    <ul>
+                        <li>Posicion: `xf = xo +vo*t +- (1/2)*a*t^2`</li>
+                        <li>Velocidad con dependencia del tiempo: `vf = vo +- a*t`</li>
+                        <li>Velocidad con dependencia de la posicion: `vf^2 = vo^2 +- 2*a*(xf - x0)`</li>
+                    </ul>
+                    Son las tres ecuaciones mas importantes del Movimiento Rectilineo, si quisieramos adaptarlas para el M.R.U, solo hacemos cero la aceleracion. <br><br>
+                    Parece que nuestro amigo Skippy se encontro a un amigo! El se encuentra sentado mientras un gato llamado Cato pasa a su lado con una velocidad constante de 7m/s, Skippy reacciona un segundo despues y lo persigue para ser amigos a una aceleracion de 3`m/s^2`, en que tiempo y velocidad Skippy lo atrapa?
+                    <figure class='imagen'>
+                        <img src='images/MRU-persecucion.png'>
                     </figure>
-                    <strong>Figura 1:</strong> Skippy corriendo a diferentes velocidades. <br>
+                    <strong>Figura 1: </strong>Ejercicio para demostrar el MRUA. <br><br>
+                    <p>
+                        Aqui tenemos que analizar a nuestros dos personajes, por un lado Skippy se encuentra en reposo, mientras que Cato va a una cierta velocidad y en un tiempo determinado le saca una cierta distancia, podemos usar la ecuacion de posicion para saber exactamente cuantos metros le saca:<br>
+                        `x = x0 + vo*t`<br><br>
+                        Donde la posicion inicial de Cato la tomaremos como cero (recuerden que tenemos control sobre nuestro sistema de referencia), asi que sabiendo la velocidad y el tiempo obtenemos que Cato le saca <b>7 metros de ventaja</b>. 
+                    </p>
+                    <p>
+                        Ahora tenemos nuestros datos, la posicion inicial de Skippy es cero, mientras que el gato tiene una de 7 metros, sabemos que Skippy alcanzara al gato porque el acelera mientras Cato sigue con velocidad constante (sera lo maximo que puede correr?), eso quiere decir que la posicion final de ambos sera la misma.<br>
+                        <ul>
+                            <li>Skippy: `xf = xo +vo*t + (1/2)*a*t^2` = `0 + 0 + (1/2)*(3m/s^2)*t^2`</li>
+                            <li>Cato: `xf = xo +vo*t` = `7 +(7 m/s)*t`</li>
+                        </ul>
+                        Si igualamos la posicion final de ambos nos queda: <br>
+                        `(1/2)*(3m/s^2)*t^2 = 7 +(7 m/s)*t`<br>
+                        Donde podemos despejar el tiempo y sabremos que tiene un valor de <b>5,5 segundos</b>. Con ese valor de tiempo podemos obtener la velocidad con la que SKippy atrapa a Cato. <br>
+                    </p>
+                    <p>
+                        `vf = vo +- a*t` = `0 + (3 m/s^2))*(5,5 s)` <br>
+                        Dando como resultado una velocidad de <b>16,5 m/s</b>! <br>
+                        Es asi como resolvemos un ejercicio tipo examen!
+                    </p>
                     
                 </p>
             </section>

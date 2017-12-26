@@ -34,10 +34,10 @@
             </section>
             <section class='vector-posicion'>
                 <p>
-                    <h1>Vector Posición</h1><br>
+                    <h1>Posición de una particula</h1><br>
                     Veamos el caso de Skippy, el corre de izquierda a derecha, moviendose de una posicion inicial (x
                     <sub>0</sub>) a una posicion final (x
-                    <sub>f</sub>), donde el termino "posicion" es solo su ubicacion en el espacio. Si restamos la posicion final de Skippy con su posicion inicial podemos obtener el <b>vector posición</b> `vecr`, el cual describe la ubicación de una particula en el espacio como se observa en la siguiente figura.<br>
+                    <sub>f</sub>), donde el termino "posicion" es solo su ubicacion en el espacio. Si restamos la posicion final de Skippy con su posicion inicial podemos obtener el <b>vector desplazamiento</b> `vecr`, el cual describe la ubicación de una particula en el espacio como se observa en la siguiente figura.<br>
                     <figure class='imagen'>
                         <img src='images/vector-posicion.png'>
                     </figure>
@@ -56,6 +56,14 @@
                             <img src='images/skippy-vector-desplazamiento.png'>
                     </figure>
                     <strong>Figura 2: </strong>Skippy demostrando el vector desplazamiento con un salto. <br><br>
+                    Ahora Skippy mientras esta en el aire tiene una posicion inicial x<sub>1</sub> y y<sub>1</sub>, creamos nuestro sistema de referencia y trazamos nuestro vector `vecr1`, luego mientras aterriza tiene una posicion diferente, en este caso x<sub>2</sub> y y<sub>2</sub>, donde su nueva posicion viene dado por el vector `vecr2`. Muy interesante, ahora tenemos dos vectores posicion, pero que sucede si queremos saber cuanto se desplazo Skippy al cambiar de la posicion `vecr1` a la posicion `vecr2`? Aqui es donde entra el <b>vector desplazamiento</b>, lo cual representa el cambio de posicion de una particula y viene dado por:  <br><br>
+                    `vecr`<sub>1</sub> = `x1hati + y1hatj`<br>
+                    `vecr`<sub>2</sub> = `x2hati + y2hatj`<br><br>
+                    Con esos dos vectores posicion, podemos obtener el <b>vector desplazamiento</b>: <br><br>
+                    `Delta``vecr` = `vecr`<sub>2</sub> - `vecr`<sub>1</sub> <br>
+                    `Delta``vecr` = `(x2 - x1)hati + (y2 - y1)hatj` <br><br>
+                    Es muy importante darse cuenta de que esta formula significa que no importa la trayectoria que una particula tenga, solo importa cual fue su posicion inicial y final.<br>
+
                 </p>
             </section>
             <section class='velocidad'>
@@ -65,18 +73,26 @@
                     `vecV`= `frac{xf - x0}{tf - t0}`
                     <br>
                     Sus unidades son los `frac{metros}{segundos}`, entonces la velocidad es la cantidad de metros recorridos en <b>un segundo</b>.
-                    <br>
+                    <br><br>
+                    La formula que vimos es conocida como <b>Velocidad Media</b>, que es el Desplazamiento entre el tiempo que le tomo cambiar posicion. Existe otro tipo de velocidad conocido como <b>Velocidad Instantanea</b>, el cual es el limite de la velocidad media cuando tiende a cero, o en terminos mas sencillos, es la velocidad en cualquier instante de tiempo. <br><br>
+                    `vecV = (dvecr)/(dt)` <br><br>
+                    Probablemente se esten asustando al ver que la derivada del desplazamiento con respecto al tiempo es la velocidad, pero esto solo nos indica que si `vecr` cambia a diferentes valores de tiempo, obtenemos una velocidad. <br><br>
+                </p>
+            </section>
+            <section class='aceleracion'>
+                <h1>Aceleracion</h1>
+                <p>
                     Ahora que sucede si Skippy corre mas rapido? <br>
                     <figure class='imagen'>
                         <img src='images/skippy-aceleracion.png'>
                     </figure>
                     <strong>Figura 2: </strong>Skippy moviendose con velocidades diferentes. <br><br>
                     En este caso Skippy se mueve con una velocidad `v`<sub>0</sub> en un tiempo `t`<sub>0</sub>, pero cuando transcurre un tiempo `t`<sub>f</sub> ahora adquiere una velocidad diferente llamada `v`<sub>f</sub>. Este cambio de velocidad con respecto al tiempo es conocido como <b>aceleracion</b>. <br><br>
-                    `veca`= `frac{vf - v0}{tf - t0}`
-                    <br>
+                    `veca`= `frac{vf - v0}{tf - t0}`<br>
+                    `veca = (dvecv)/(dt)` <br><br>
                     Sus unidades son los `frac{metros}{segundos^2}`, entonces la aceleracion es la variacion de la velocidad con respecto al tiempo, o visto de otra manera, es la variacion de distancias recorridas por una particula (en este caso Skippy!) con respecto al cuadrado del tiempo.
                     <br><br>
-                    Esto solo es un abre bocas de lo que veremos en este tema, nos adentraremos en profundidad con la Fisica junto a Skippy!s
+                    Esto solo es un abre bocas de lo que veremos en este tema, nos adentraremos en profundidad con la Fisica junto a Skippy!
                 </p>
             </section>
         </article>
