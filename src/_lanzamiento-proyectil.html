@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Blog de Fisica Adrian Beria">
+    <meta name="keywords" content="Adrian,Beria,Fisica,Profesor,Blog">
+    <meta name="author" content="Adrian Beria">
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_HTMLorMML"></script>
+    <script src="ASCIIMathML.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <title>Blog de Fisica</title>
+</head>
+
+<body>
+    <main>
+        <article>
+            <section class='introduccion'>
+                <h1 class='title'>Lanzamiento de Proyectiles</h1>
+                <p>
+                    Existen varios tipos de lanzamientos de proyectiles: <br><br>
+                    <ul>
+                        <li><h1>Caida Libre</h1></li>
+                        <li><h1>Lanzamiento Horizontal</h1></li>
+                        <li><h1>Lanzamiento Vertical</h1></li>
+                        <li><h1>Movimiento Parabolico</h1></li>
+                    </ul>
+                    <br>
+                    Los tres primeros movimientos son muy parecidos a los M.R.U.A pero ahora interviene una nueva variable, y esa es la <b>gravedad</b>, el cual es una fuerza física que la Tierra ejerce sobre todos los cuerpos hacia su centro, en el caso de nuestro planeta, el ejerce una aceleracion (la fuerza y la aceleracion estan relacionados de manera proporcional) de <b>9,8 m/s^2</b>.
+                </p>
+            </section>
+            <section class='caida-libre'>
+                <h1>Caida Libre</h1>
+                <p>
+                    La caída libre es un movimiento rectilíneo uniformemente acelerado (MRUA) en el que se deja caer un cuerpo verticalmente (su velocidad inicial es cero porque dejamos caer un cuerpo) desde cierta altura y no encuentra resistencia alguna en su camino. Las ecuaciones de la caída libre son: <br>
+                    `yf = y0 - frac{1}{2}*g*t^2`<br>
+                    `vf = - g*t`<br>
+                </p>
+                <p>
+                    Como vemos no es nada complicado, el negativo nos indica la direccion de la gravedad que casi siempre es negativa porque apunta en direccion "-j". Otra cosa que vemos es el cambio de "x" por "y", y es que en Caida Libre generalmente nos importa solamente el eje vertical ya que es ahi donde se representa este tipo de movimientos. Por ultimo veamos un tip que Skippy nos quiere mostrar saltando desde una altura.
+                </p>
+                <figure class='imagen'>
+                    <img src='images/skippy-caida-libre.png'>
+                </figure>
+                <strong>Figura 1: </strong>Skippy demostrando Caida Libre. <br><br>
+                <p>
+                    Si quisieramos obtener el tiempo que le toma a Skippy ir de su posicion inicial `y0` a su posicion final 'yf', observamos que la ecuacion: <br>
+                    `yf = y0 - frac{1}{2}*g*t^2`<br>
+                    Es parecida a <br>
+                    `xf = xo +vo*t + (1/2)*a*t^2`<br>
+                </p>
+                <p>
+                    Con la diferencia de que la velocidad inicial `vo` es cero, pero porque? <b>Todo cuerpo que acelera desde el reposo tiene una velocidad inicial de cero</b>. Por eso en las formulas de caida libre se toma en cuenta que esa velocidad es cero, pero puede que existan casos donde no sea asi. 
+                </p>
+            </section>
+            <section class='lanzamiento-vertical'>
+                <h1>Lanzamiento Vertical</h1>
+                <p>
+                    El lanzamiento vertical es un movimiento rectilíneo uniformemente acelerado (MRUA) en el que se lanza un cuerpo verticalmente con cierta velocidad inicial desde cierta altura y no encuentra resistencia alguna en su camino. Podemos distinguir dos casos según el sistema de referencia considerado:
+                    <ul>
+                        <li>
+                            Lanzamos el cuerpo hacia arriba y por tanto velocidad inicial positiva (v<sub>0y</sub> >0). En este caso las ecuaciones del lanzamiento vertical hacia arriba son: <br>
+                            `yf = yo +voy*t - (1/2)*g*t^2` y `vf = voy - g*t`
+                        </li>
+                        <li>
+                            Lanzamos el cuerpo hacia abajo y por tanto velocidad inicial negativa (v<sub>0y</sub> < 0). En este caso las ecuaciones del lanzamiento vertical hacia abajo son: <br>
+                            `yf = yo -voy*t - (1/2)*g*t^2` y `vf = -voy- g*t`
+                        </li>
+                    </ul>
+                </p>
+            </section>
+            <section class='lanzamiento-horizontal'>
+                <h1>Lanzamiento Horizontal</h1>
+                <p>
+                    El lanzamiento horizontal consiste en lanzar un cuerpo horizontalmente desde cierta altura. El lanzamiento horizontal resulta de la composición de un movimiento rectilíneo uniforme (MRU horizontal) y un movimiento rectilíneo uniformemente acelerado de caída libre (MRUA vertical). En el siguiente ejemplo Skippy se impulsa horizontalmente desde una altura: <br>
+                </p>
+                <figure class='imagen'>
+                    <img src='images/skippy-lanzamiento-horizontal.png'>
+                </figure>
+                <strong>Figura 1: </strong>Skippy demostrando el Lanzamiento Horizontal. <br><br>
+                <p>
+                    Podemos observar que la velocidad tiene dos componentes, vx y vy, donde la componente X viene gobernado por un MRU, es decir, la velocidad es constante, asi que la componente X de la velocidad siempre sera la misma. En la componente Y la cosa cambia porque viene afectado por la gravedad, sino Skippy quedaria en el aire permanentemente! Ahora veamos las ecuaciones que gobiernan este tipo de movimientos:
+                </p>
+                <p>
+                    MRU: <br>
+                    `xf = xo +vo*t`<br>
+                    MRUA: <br>
+                    `yf = y0 +vo*t - frac{1}{2}*g*t^2`<br>
+                    `vf = v0 - g*t`<br><br>
+                </p>
+                <p>
+                    La velocidad forma un ángulo α con la horizontal, las componentes x e y se determinan recurriendo a las relaciones trigonométricas más habituales:
+                </p>
+                <figure class='imagen'>
+                    <img src='images/velocidad-descomposicion.png'>
+                </figure>
+                <strong>Figura 1: </strong>Componentes de la velocidad. <br><br>
+            </section>
+        </article>
+    </main>
+    <script src='js/main.js'></script>
+</body>
+
+</html>
