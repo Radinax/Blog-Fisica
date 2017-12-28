@@ -100,6 +100,70 @@
                 </figure>
                 <strong>Figura 1: </strong>Componentes de la velocidad. <br><br>
             </section>
+            <section class="movimiento-parabolico">
+                <h1>Movimiento Parabolico</h1>
+                <p>
+                    El movimiento parabólico, consiste en lanzar un cuerpo con una velocidad que forma un ángulo α con la horizontal. El movimiento parabólico o tiro oblicuo resulta de la composición de un movimiento rectilíneo uniforme (MRU horizontal) y un movimiento rectilíneo uniformemente acelerado de lanzamiento hacia arriba o hacia abajo (MRUA vertical).En la siguiente figura puedes ver una representación de la situación para un caso simetrico:
+                </p>
+                <figure class='imagen'>
+                    <img src='images/movimiento-parabolico-simetrico.png'>
+                </figure>
+                <strong>Figura 1: </strong>Movimiento Parabolico Simetrico. <br><br>
+                Donde las componentes de la velocidad se pueden resumir de la siguiente forma: <br>
+                <figure class='imagen'>
+                    <img src='images/formula-componentes-velocidad.png'>
+                </figure>
+                <p>
+                    Para este tipo de movimiento aparecen nuevas variables, revisemos de que tratan.
+                </p>
+                <ul>
+                    <li>
+                        <b>Altura máxima:</b> Este valor se alcanza cuando la componente Y de la velocidad vale 0, o visto de otra forma, es la altura maxima que alcanza un objeto cuando experimenta un movimiento parabolico como se mostro en la figura anterior.<br>
+                        <figure class='imagen'>
+                            <img src='images/formula-altura-maxima.png'>
+                        </figure>
+                    </li>
+                    <li>
+                        <b>Tiempo de vuelo:</b> Es el tiempo que le toma al objeto realizar el Movimiento Parabolico desde su posicion inicial hasta el final, es decir, cuando su altura final sea cero. <br>
+                        <figure class='imagen'>
+                            <img src='images/formula-tiempo-vuelo.png'>
+                        </figure>
+                    </li>
+                    <li>
+                        <b>Alcance Horizontal:</b> Se trata de la distancia máxima en horizontal desde el punto de inicio del movimiento al punto en el que el cuerpo impacta el suelo. <br>
+                        <figure class='imagen'>
+                            <img src='images/formula-alcance-maximo.png'>
+                        </figure>
+                    </li>
+                </ul>
+                Entonces el Movimiento Parabolico Simetrico es cuando la altura inicial y final son el mismo, veamos el caso cuando son diferentes<br>
+                <figure class='imagen'>
+                    <img src='images/movimiento-parabolico-asimetrico.png'>
+                </figure>
+                <strong>Figura 1: </strong>Movimiento Parabolico Asimetrico. <br><br>
+                <p>
+                    En este caso aunque los conceptos sean iguales, las formulas son diferentes porque las que acabamos de ver toman en cuenta que la altura inicial es cero, cuando no siempre sera asi, por lo tanto en estos casos es mas conveniente utilizar las ecuaciones tradicionales de MRU para la componente X y MRUA para la componente Y. Veamos un caso donde se pueda aplicar un movimiento parabolico asimetrico obteniendo todos los datos posibles del siguiente ejercicio:
+                </p>
+                <figure class='imagen'>
+                    <img src='images/movimiento-parabolico-ejercicio1.png'>
+                </figure>
+                <strong>Figura 1: </strong>Caso de un movimiento parabolico asimetrico. <br><br>
+                <p>
+                    En este caso pareciera que tenemos muy pocos datos, pero no es asi. De la ecuacion de posicion del eje X podemos despejar el tiempo y substituirlo en la ecuacion de posicion del eje Y.
+                </p>
+                <p>
+                    `xf = xo +vo*t` <br>
+                    `x =`v<sub>0</sub>cos`theta`<sub>0</sub>t <br>
+                    t = `x/(v0cos(theta))`<br>
+                    `yf = y0 - v0*sen(theta)*t - (1/2)*g*t^2`<br>
+                    `yf = y0 - v0*sen(theta)*(x/(v0cos(theta))) - (1/2)*g*(x/(v0cos(theta)))^2`<br>
+                    `0 = 40 - sen(45)*(100/(cos(45))) - (1/2)*9,8*(100/(v0cos(45)))^2`<br>
+                </p>
+                <p>
+                    Con esto podemos despejar la magnitud de la velocidad inicial y obtener todas las demas variables.
+                </p>
+                
+            </section>
         </article>
     </main>
     <script src='js/main.js'></script>
