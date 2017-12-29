@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Blog de Fisica Adrian Beria">
+    <meta name="keywords" content="Adrian,Beria,Fisica,Profesor,Blog">
+    <meta name="author" content="Adrian Beria">
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_HTMLorMML"></script>
+    <script src="ASCIIMathML.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <title>Blog de Fisica</title>
+</head>
+
+<body>
+    <main>
+        <article>
+            <section class="movimiento-circular">
+                <h1 class="title">Movimiento Circular</h1>
+                <p>
+                    Hemos visto movimientos rectos y parabolicos donde suceden cosas interesantes con los vectores velocidad y la ecuacion de posicion, en este caso el protagonista de la pelicula es la aceleracion. Hemos visto que por lo general es un solo vector que representa el cambio de la velocidad en ciertos tramos de desplazamiento, sin embargo esta compuesto de dos componentes principales:
+                </p>
+                `veca` = a<sub>t</sub>`hatt` - `a<sub>r</sub>`hatr`
+                <p>
+                    Donde:
+                    <ul>
+                        <li>a<sub>r</sub>`hatr`: Es conocido como la <b>Aceleracion Radial.</b>
+                            <p>
+                                Es la componente radial de la aceleracion que representa <b>el cambio de direccion</b>, generalmente hemos visto que la aceleracion nos indicaba el cambio en la magnitud de la velocidad, pero quien era responsable era la componente tangencial de la aceleracion. Sus unidades son los metros/segundos (`m/s^2`).<br>
+                                a<sub>r</sub> = `v^2/R` = `omega^2 * R`
+                                <figure class='imagen'>
+                                    <img src='images/movimiento-circular-aceleracion-radial.png'>
+                                </figure>
+                                <strong>Figura 1:</strong> Aceleracion Radial. 
+                            </p>
+                        </li>
+                        <li>a<sub>t</sub>`hatt`: Es conocido como la <b>Aceleracion Tangencial.</b>
+                            <p>
+                                Es la componente tangencial de la aceleracion que representa <b>el cambio en la magnitud</b>, basicamente es la misma que vimos en el M.R.U.A, solo que en ese caso la aceleracion radial era cero. En este caso podemos observar que v<sub>L</sub> varia en tamaño lo cual indica la existencia de esta componente de la aceleracion que produce lo que se conoce como un <b>Movimiento Circular Uniforme Acelerado</b>. Sus unidades son los metros/segundos (`m/s^2`).  <br>
+                                a<sub>t</sub> = `alpha`*R
+                                <figure class='imagen'>
+                                    <img src='images/movimiento-circular-aceleracion-tangencial.png'>
+                                </figure>
+                                <strong>Figura 1:</strong> Aceleracion Tangencial. 
+                                
+                            </p>
+                        </li>
+                    </ul>
+                </p>
+                <p>
+                    Antes de seguir necesitamos revisar algunos conceptos:
+                    <ul>
+                        <li>
+                            <b>Posicion Angular</b>: La posición angular `theta` representa el ángulo que forma en cada momento el vector de posición de un cuerpo con el semieje X positivo. Su unidad en el Sistema Internacional de Unidades (S.I.) es el radián (rad).<br>
+                            `thetaf = thetao +omegao*t + (1/2)*alpha*t^2` <br>
+                        </li>
+                        <li>
+                            <b>Desplazamiento Angular</b>: El desplazamiento angular (`Delta``theta`) representa el ángulo recorrido. Viene dado por la diferencia entre una posición angular final `theta`<sub>f</sub> y una posición angular inicial `theta`<sub>i</sub>: <br>
+                            `Delta``theta` = `theta`<sub>f</sub> - `theta`<sub>i</sub> 
+                        </li>
+                        <li>
+                            <b>Velocidad Angular</b>: Representa el desplazamiento angular (`Delta``theta`) experimentado por un cuerpo en cada segundo. Su unidad en el Sistema Internacional de Unidades (S.I.) es el radian/segundos (rad/s) aunque en ocasiones vera que se puede utilizar también las revoluciones o vueltas por minuto, r.p.m. (1 r.p.m. = 2π/60 rad/s). Al igual que sucedía con la velocidad, existe la velocidad angular media ωm y la velocidad angular instantánea ω (o simplemente velocidad angular) según se considere un intervalo de tiempo Δt o un instante de tiempo respectivamente dt. <br>
+                            `omega`<sub>m</sub> = `frac{Deltatheta}{Deltat}` = `frac{thetaf - thetao}{tf - t0}`<br>
+                            `omega` = `frac{d theta}{dt}`<br>
+                            `omegaf^2 = omegao^2 +- 2*alpha*(thetaf - theta0)`<br>
+                            `omega = 2*pi*f`<br>
+                            `omegaf = omegao + alpha*t`
+                        </li>
+                        <li>
+                            <b>Aceleracion Angular</b>: Representa la variación de velocidad angular (Δω) respecto del tiempo. Su unidad en el Sistema Internacional de Unidades (S.I.) es el rad⁄`s^2`. Al igual que sucedía con las magnitudes lineales equivalentes, existe la aceleración angular media αm y la aceleración angular instantánea α (o simplemente aceleración angular) según se considere un intervalo de tiempo Δt o un instante de tiempo respectivamente dt. <br>
+                            `a`<sub>m</sub> = `frac{Delta omega}{Deltat}` = `frac{omegaf - omegao}{tf - t0}`<br>
+                            `alpha` = `frac{d omega}{dt}`
+                        </li>
+                        <li>
+                            <b>Distancia Recorrida</b>: O conocido como longitud de arco, es la distancia recorrida en metros por un objeto que experimenta un movimiento circular.<br>
+                            S = `R*theta`
+                        </li>
+                        <li>
+                            <b>Velocidad Lineal</b>: Es la velocidad que conociamos del Movimiento Rectilineo, sus unidades con los metros/segundos (`m/s^2`), es un vector tangente a la distancia recorrida S.<br>
+                            v<sub>L</sub> = `omega*R`
+                        </li>
+                        <li>
+                            <b>Periodo</b>: Se trata del tiempo que tarda el cuerpo en cumplir un ciclo o en este caso dar una vuelta completa. Se representa por T y se mide en segundos (s). Su expresión viene dada por:<br>
+                            `thetaf - thetao = omegao*t`<br>
+                            `T = 2*pi/omega`
+                        </li>
+                        <li>
+                            <b>Frecuencia</b>: Se trata del número de ciclos por segundo. Se representa por f y se mide en la inversa del segundo (1/s) , que también se denomina hercio (Hz). Su expresión viene dada por:
+                            `f = omega/(2*pi)`<br>
+                            `f = 1/T`
+                        </li>
+                    </ul>
+                </p>
+            </section>
+            <section class='movimiento-circular-uniforme'>
+                <h1 class='title'>Movimiento Circular Uniforme</h1>
+                <p>
+                    El movimiento circular uniforme (MCU) es un movimiento de trayectoria circular en el que la velocidad angular es constante. Esto implica que describe ángulos iguales en tiempos iguales. En él, el vector velocidad no cambia de módulo pero sí de dirección (es tangente en cada punto a la trayectoria). Esto quiere decir que no tiene aceleración tangencial ni aceleración angular, aunque sí aceleración normal. Sus principales caracteristicas son:
+                </p>
+                <ul>
+                    <li>La velocidad angular es constante (ω = cte).</li>
+                    <li>El vector velocidad es tangente en cada punto a la trayectoria y su sentido es el del movimiento. Esto implica que el movimiento cuenta con aceleración normal.</li>
+                    <li>Tanto la aceleración angular (α) como la aceleración tangencial (at) son nulas, ya que la rapidez (módulo del vector velocidad) es constante.</li>
+                    <li>Existe un periodo (T), que es el tiempo que el cuerpo emplea en dar una vuelta completa. Esto implica que las características del movimiento son las mismas cada T segundos. La expresión para el cálculo del periodo es T=2π/ω y es sólo válida en el caso de los movimientos circulares uniformes (MCU).</li>
+                    <li>Existe una frecuencia (f), que es el número de vueltas que da el cuerpo en un segundo. Su valor es el inverso del periodo.</li>
+                </ul>
+            </section>
+            <section class="movimiento-circular-uniforme-acelerado">
+                <h1>Movimiento Circular Uniforme Acelerado</h1>
+                <p>
+                    Hasta ahora hemos visto un tema bastante grueso en cuanto a teoria comparado a los otros, en este apartado despertaremos a Skippy que estuvo tomando una siesta. El se encontraba en un arbol cuando de repente se levanta y comienza a perseguir su cola alrededor del arbol dando vueltas en un circulo una y otra vez con velocidad constante y aceleracion radial de 9 `m/s^2`. Durante el todo el recorrido se mantiene un radio R con respecto al arbol de 20 metros. 
+                </p>
+                <figure class='imagen'>
+                    <img src='images/movimiento-circular-ejercicio.png'>
+                </figure>
+                <strong>Figura 1:</strong> Ejercicio de Movimiento Circular. 
+                <P>
+                    Skippy aumenta su velocidad tres veces pensando que eso lo ayudara a morderse su cola, que sucede con la aceleracion radial del el? Si es " a<sub>r</sub> = `v^2/R` ", entonces su aceleracion radial aumenta 9 veces!
+                </P>
+                <p>
+                    Ahora Skippy aumenta su rapidez a razon de 2`m/s^2`, cual sera su aceleracion total despues de tres segundos?
+                </p>
+                <p>
+                    Comienza a ponerse interesante la cosa, como vimos la aceleracion total viene dado por `veca` = a<sub>t</sub>`hatt` - `a<sub>r</sub>`hatr`, pero que significan esos 2`m/s^2`? Su aceleracion tangencial porque es la responsable de modificar la rapidez, el hecho de que Skippy se mueva para nuestra perspectiva, mas rapido, quiere decir que entra en efecto la componente tangencial de la aceleracion, entonces solo nos queda obtener la aceleracion radial: <br> 
+                    a<sub>r</sub> = `v^2/R` = `omega^2 * R`
+                </p>
+                <p>
+                    Solo tenemos el radio, la aceleracion radial (antes de acelerar), la aceleracion tangencial y el tiempo, no tenemos ni la velocidad lineal ni la velocidad angular, que podemos hacer ahora? Con la aceleracion tangencial podemos obtener la aceleracion angular. <br>
+                    a<sub>t</sub> = `alpha`*R<br>
+                    `alpha` = a<sub>t</sub>/R<br>
+                    `alpha` = `2/20 (rad)/s^2`<br>
+                    <b>`alpha` = `0,1 (rad)/s^2`</b>
+                </p>
+                <p>
+                    Con la aceleracion angular podemos buscar entre todas las formulas cuales podemos usar para seguir indagando sobre la aceleracion total con la que Skippy persigue su cola despues de tres segundos:
+                    `omegaf^2 = omegao^2 +- 2*alpha*(thetaf - theta0)`<br>
+                    `thetaf = thetao +omegao*t + (1/2)*alpha*t^2`<br>
+                    `omegaf = omegao + alpha*t`
+                </p>
+                <p>
+                    Antes habiamos dicho que si un objeto acelera desde el reposo su velocidad inicial es cero, pero en este caso Skippy ya venia con una velocidad angular inicial.<br>
+                    a<sub>r</sub> = `omega^2 * R`<br>
+                    `omegao` = `sqrt(ar/R)`<br>
+                    `omega0` = `sqrt(9/20) (rad)/s`<br>
+                    <b>`omega0` = 0,67 rad/s</b>
+                </p>
+                <p>
+                    Ahora si podemos obtener su velocidad angular final. <br>
+                    `omegaf = omegao + alpha*t`<br>
+                    `omegaf = 0,67 (rad)/s + (0,1 (rad)/s^2)*(3 s)`<br>
+                    <b>`omegaf = 0,97` rad/s</b>
+                </p>
+                <p>
+                    Con esto podemos obtener la aceleracion radial de Skippy luego de tres segundos al acelerar.<br>
+                    a<sub>r</sub> = `omegaf^2 * R`<br>
+                    a<sub>r</sub> = `(0,97 rad/s)^2 * 20 m/s^2`<br>
+                    a<sub>r</sub> = `18,18 m/s^2`<br>
+                </p>
+                <p>
+                    Ahora si podemos obtener la aceleracion total! <br>
+                    `veca` = a<sub>t</sub>`hatt` - `a<sub>r</sub>`hatr`<br>
+                    `(abs(veca))^2` = `(at)^2` + `(ar)^2`<br>
+                    `abs(veca)` = `sqrt(at^2 + ar^2)`<br>
+                    `abs(veca)` = `sqrt((2)^2 + 18,18^2)`<br>
+                    <b>`abs(veca)` = 18,92 `m/s^2`</b>
+                </p>
+                <p>
+                    Finalmente obtenemos que la aceleracion total de Skippy es de 18,92 `m/s^2`. Una de las cosas interesantes de este caso, es que la aceleracion radial depende de la velocidad angular, entonces esos 9 `m/s^2` no se mantenian de manera constante, sino modificaban su valor cuando la velocidad angular cambiaba debido a la existencia de una aceleracion angular que vino de la aceleracion tangencial cuando Skippy comenzo a acelerar para perseguir su cola.
+                </p>
+            </section>
+        </article>
+    </main>
+    <script src='js/main.js'></script>
+</body>
+
+</html>
